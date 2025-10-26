@@ -1,0 +1,276 @@
+/* Aplicando na página inteira */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --fundo: #0A0C10;
+    --azulPR: #007BFF; 
+    --azulCL: #66CCFF; 
+    --azulSEC: #66CCFF; 
+    --texto: #E0E0E0; 
+}
+
+/* Corpo e cores principais */
+body {
+    background-color: var(--fundo);
+    color: var(--texto);
+}
+
+/* Navegação */
+.navegacao {
+    position: fixed;
+    background-color: rgba(10, 12, 16, 0.6);
+    width: 100%;
+    z-index: 100;
+    padding: 1.5rem;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 3rem;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: var(--azulSEC);
+    font-weight: 500;
+    position: relative;
+    padding: 0.5rem 0;
+}
+
+.menu-link::after {
+    content: '';
+    height: 2px;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, var(--azulPR), var(--azulCL));
+    transition: width 0.5s ease;
+}
+
+.menu-link:hover::after {
+    width: 100%;
+}
+
+/* Início */
+.cabecalho {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.foto-perfil {
+    width: 330px;
+    height: 395px;
+    box-shadow: 0 0 25px rgba(0, 123, 255, 0.3);
+    border: 4px solid var(--azulPR);
+    border-radius: 50%;
+    animation: flutuar 5s ease-in-out infinite;
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: var(--azulSEC);
+    font-weight: bold;
+    margin: 20px;
+}
+
+.cabecalho-subtitulo {
+    font-size: 1.5rem;
+    color: var(--azulPR);
+}
+
+/* Seção Sobre */
+.sobre {
+    padding: 6rem 2rem;
+}
+
+.sobre-titulo {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--azulSEC);
+}
+
+.sobre-div {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 16px;
+    border: 1px solid var(--azulPR);
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.sobre-texto {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/* Seção Projetos */
+.projeto {
+    padding: 6rem 2rem;
+}
+
+.projeto-titulo {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: var(--azulSEC);
+}
+
+.projeto-div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projeto-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    border: 1px solid var(--fundo);
+    overflow: hidden;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.projeto-card:hover {
+    box-shadow: 0 10px 20px rgba(0, 123, 255, 0.3);
+    transform: translateY(-10px) scale(1.03);
+}
+
+.projeto-imagem {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.projeto-div-textos {
+    padding: 1.5rem;
+}
+
+.info-projeto {
+    color: var(--azulSEC);
+    line-height: 1.25rem;
+}
+
+.paragrafo-projeto {
+    margin-bottom: 5px;
+}
+
+/* Seção Contato */
+.contato {
+    padding: 6rem 2rem;
+}
+
+.contato-titulo {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: var(--azulSEC);
+}
+
+.formulario-contato {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    padding: 2rem;
+    border: 1px solid var(--fundo);
+    border-radius: 16px;
+}
+
+.campo-form {
+    width: 100%;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    color: var(--azulSEC);
+    border: 1px solid var(--fundo);
+    outline: none;
+}
+
+.campo-form:focus {
+    border-color: var(--azulPR);
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+}
+
+.campo-form.textarea {
+    width: 100%;
+    max-width: 100%;
+    height: 120px;
+    max-height: 200px;
+    resize: vertical;
+    overflow: auto;
+}
+
+.grupo-form {
+    margin-bottom: 1.5rem;
+}
+
+.botao-form {
+    color: var(--texto);
+    background: linear-gradient(45deg, var(--azulPR), var(--azulCL));
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+
+.botao-form:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
+}
+
+/* Fundo de partículas animado */
+.particulas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background:
+        radial-gradient(circle at 10% 20%, var(--azulPR) 0%, transparent 20%),
+        radial-gradient(circle at 90% 80%, var(--azulCL) 0%, transparent 20%),
+        radial-gradient(circle at 50% 50%, var(--azulSEC) 0%, transparent 25%),
+        var(--fundo);
+    background-size: 200% 200%;
+    animation: particulasAnim 10s ease-in-out infinite alternate;
+    opacity: 0.4;
+}
+
+@keyframes particulasAnim {
+    0% { background-position: 0% 0%; }
+    100% { background-position: 100% 100%; }
+}
+
+/* Animação flutuar */
+@keyframes flutuar {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
