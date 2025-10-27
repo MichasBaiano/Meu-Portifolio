@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Brilho Perdido — Projetos</title>
+    <link rel="icon" type="image/png" href="../../assets/img/Favicon/Favicon.png">
+
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="../../style.css">
+
+    <!-- CSS específico deste projeto -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Utilizando icons do Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS do Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- JS do Owl Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#gallery-carousel").owlCarousel({
+                items: 1,
+                loop: true,
+                margin: 10,
+                nav: true,
+                dots: true
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <div class="particulas"></div>
+
+    <nav class="navegacao">
+
+        <ul class="menu">
+            <li>
+                <a href="../../index.html" class="menu-link">Inicio</a>
+            </li>
+
+            <li>
+                <a href="../../index.html#projetos" class="menu-link">Projetos</a>
+            </li>
+
+    </nav>
+
+    <main>
+        <div class="projeto-header">
+            <img class="projeto-thumb" src="../../assets/img/Foto-Projetos/brilho perdido.jpeg" alt="Brilho Perdido">
+            <div class="meta">
+                <h1 class="projeto-titulo">Brilho Perdido</h1>
+                <p class="projeto-sobre">
+                    Brilho Perdido é um RPG ambientado em fases misteriosas que exploram a cidade de Pedro II e suas
+                    lendas. A jornada leva o jogador por caminhos repletos de mitologia, segredos e desafios únicos,
+                    fundindo cultura local com elementos de fantasia e ação.
+                </p>
+                <p class="projeto-sobre">
+                    Este projeto foi inspirado em uma das grandes lendas do Piauí: a da Baleia Gigante que, segundo a
+                    tradição popular, habita o subsolo da maior igreja da cidade de Pedro II. A partir dessa narrativa,
+                    desenvolvemos um jogo centrado nessa criatura mítica e no personagem controlado pelo jogador.
+                </p>
+                <p class="projeto-sobre">
+                    Nosso game foi apresentado durante o OPALATECH IV — um evento científico promovido pelo IFPI –
+                    Campus Pedro II — e participou da competição de jogos do evento. Com grande orgulho, conquistamos o
+                    2º lugar, sendo reconhecidos tanto pelo público (alunos e visitantes) quanto por uma banca
+                    avaliadora especializada em desenvolvimento de jogos.
+                </p>
+
+                <div class="btn-row">
+                    <a class="btn github" href="https://github.com/MichasBaiano/Brilho-Perdido#" target="_blank"
+                        rel="noopener">
+                        <i class="fa-brands fa-github"></i>
+                        <span>Ver no GitHub</span>
+                    </a>
+
+                    <a class="btn linkedin"
+                        href="https://www.linkedin.com/posts/devmichelferreira_hoje-compartilho-mais-um-projeto-desenvolvido-activity-7381422604517150720-M_rW"
+                        target="_blank" rel="noopener">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <span>Ver post no LinkedIn</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <section class="tecnologias">
+            <h2 class="tecnologias-titulo">Tecnologias utilizadas</h2>
+            <div class="owl-carousel owl-theme" id="skills-carousel">
+
+                <div class="item tech-item">
+                    <i class="fa-brands fa-unity"></i>
+                    <strong>Unity</strong>
+                </div>
+
+                <div class="item tech-item">
+                    <i class="fa-solid fa-code"></i>
+                    <strong>C#</strong>
+                </div>
+
+                <div class="item tech-item">
+                    <i class="fa-brands fa-github"></i>
+                    <strong>GitHub</strong>
+                </div>
+
+                <div class="item tech-item">
+                    <i class="fa-solid fa-gamepad"></i>
+                    <strong>Design de jogos</strong>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="galeria">
+            <h2 class="galeria-titulo">Galeria do projeto</h2>
+
+            <div class="owl-carousel owl-theme project-gallery" id="gallery-carousel">
+                <div class="item">
+                    <figure>
+                        <img class="galeria-thumb" src="./imagens/premio.jpeg" alt="Imagem 1 do projeto"
+                            data-full="./imagens/premio.jpeg">
+                        <figcaption>Premiação do projeto</figcaption>
+                    </figure>
+                </div>
+
+                <div class="item">
+                    <figure>
+                        <img class="galeria-thumb" src="./imagens/baleia.jpeg" alt="Imagem 2 do projeto"
+                            data-full="./imagens/baleia.jpeg">
+                        <figcaption>Arte da lenda da baleia na igreja de Pedro II</figcaption>
+                    </figure>
+                </div>
+
+                <div class="item">
+                    <figure>
+                        <img class="galeria-thumb" src="./imagens/igrejadep2.jpeg" alt="Imagem 3 do projeto"
+                            data-full="./imagens/igrejadep2.jpeg">
+                        <figcaption>Igreja de Pedro II</figcaption>
+                    </figure>
+                </div>
+
+                <div class="item">
+                    <figure>
+                        <img class="galeria-thumb" src="./imagens/creditos.jpeg" alt="Imagem 4 do projeto"
+                            data-full="./imagens/creditos.jpeg">
+                        <figcaption>Créditos finais</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#skills-carousel').owlCarousel({
+                loop: true,
+                margin: 16,
+                nav: true,
+                dots: false,
+                responsive: {
+                    0: { items: 1 },
+                    600: { items: 2 },
+                    1000: { items: 3 }
+                }
+            });
+
+            const input = document.getElementById('fileInput');
+            const previews = document.getElementById('previews');
+
+            input.addEventListener('change', (ev) => {
+                previews.innerHTML = '';
+                Array.from(ev.target.files).forEach(file => {
+                    if (file.type.startsWith('image/')) {
+                        const fr = new FileReader();
+                        fr.onload = () => {
+                            const img = document.createElement('img');
+                            img.src = fr.result;
+                            img.className = 'thumb-preview';
+                            previews.appendChild(img);
+                        };
+                        fr.readAsDataURL(file);
+                    } else {
+                        const div = document.createElement('div');
+                        div.textContent = file.name;
+                        div.style.padding = '.5rem';
+                        div.style.border = '1px solid rgba(255,255,255,0.06)';
+                        div.style.borderRadius = '6px';
+                        previews.appendChild(div);
+                    }
+                });
+            });
+        });
+    </script>
+
+    <!-- Script para abrir as imagens maior -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const modal = document.getElementById("imageModal");
+            const modalImg = document.getElementById("modalImg");
+            const captionText = document.getElementById("caption");
+            const closeBtn = document.querySelector(".close");
+
+            document.querySelectorAll(".galeria-thumb").forEach(img => {
+                let mouseDownX = 0;
+                let mouseDownY = 0;
+                let dragged = false;
+
+                img.addEventListener("mousedown", e => {
+                    mouseDownX = e.clientX;
+                    mouseDownY = e.clientY;
+                    dragged = false;
+                });
+
+                img.addEventListener("mousemove", e => {
+                    if (Math.abs(e.clientX - mouseDownX) > 5 || Math.abs(e.clientY - mouseDownY) > 5) {
+                        dragged = true;
+                    }
+                });
+
+                img.addEventListener("mouseup", () => {
+                    if (!dragged) {
+                        modal.style.display = "block";
+                        modalImg.src = img.dataset.full;
+                        captionText.innerText = img.nextElementSibling?.innerText || img.alt;
+
+                        modalImg.style.animation = "none";
+                        void modalImg.offsetWidth;
+                        modalImg.style.animation = "zoomIn 0.4s ease forwards";
+                    }
+                });
+            });
+
+            closeBtn.addEventListener("click", () => {
+                modal.style.display = "none";
+            });
+
+            modal.addEventListener("click", (e) => {
+                if (e.target === modal) modal.style.display = "none";
+            });
+        });
+    </script>
+
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div id="caption"></div>
+    </div>
+</body>
+
+</html>

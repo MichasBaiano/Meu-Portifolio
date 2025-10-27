@@ -1,0 +1,268 @@
+:root {
+    --fundo: #0A0C10;
+    --azulPR: #007BFF;
+    --azulCL: #66CCFF;
+    --azulSEC: #66CCFF;
+    --texto: #E0E0E0;
+    --accent: #7b3cff;
+}
+
+main {
+    max-width: 1200px;
+    margin: 6rem auto;
+    padding: 0 1rem;
+}
+
+.projeto-header {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    max-width: 1100px;
+    margin: 3rem auto;
+    padding: 1.5rem;
+    border-radius: 12px;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.projeto-titulo {
+    color: var(--azulSEC);
+    margin: 0;
+}
+
+.projeto-sobre {
+    max-width: 800px;
+    margin-top: 0.5rem;
+    text-align: justify;
+}
+
+.projeto-thumb {
+    width: 320px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 4px solid rgba(123, 60, 255, 0.12);
+}
+
+.meta {
+    color: var(--texto);
+}
+
+.tecnologias-titulo {
+    max-width: 1200px;
+    margin: 1rem auto;
+    padding: 0 0;
+    color: var(--azulCL);
+}
+
+.galeria {
+    margin-top: 1.5rem;
+}
+
+.galeria-titulo {
+    max-width: 1200px;
+    margin: 1rem auto;
+    padding: 0 0;
+    color: var(--azulCL);
+}
+
+figure {
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background: rgba(0, 0, 0, 0.55);
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+figure:hover figcaption {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.btn-row {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 0.75rem;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.7rem 1rem;
+    border-radius: 8px;
+    color: var(--texto);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn i {
+    font-size: 1.1rem;
+}
+
+.btn.github {
+    background-color: #24292e;
+}
+
+.btn.github:hover {
+    background-color: #000000;
+    transform: translateY(-2px);
+}
+
+.btn.linkedin {
+    background-color: #0077b5;
+}
+
+.btn.linkedin:hover {
+    background-color: #005f8d;
+    transform: translateY(-2px);
+}
+
+.tech-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 2rem;
+    color: var(--texto);
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.tech-item i {
+    font-size: 2.0rem;
+    margin-bottom: 0.8rem;
+}
+
+.uploader {
+    margin-top: 1rem;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.thumb-preview {
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 8px;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+#previews {
+    display: flex;
+    gap: 8px;
+    margin-top: 0.75rem;
+}
+
+.uploader small {
+    display: block;
+    margin-top: 0.6rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.galeria-thumb {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+figure:hover .galeria-thumb {
+    transform: scale(1.05);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+    animation: fadeIn 0.3s ease forwards;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 80vh;
+    border-radius: 10px;
+    transform: scale(0.8);
+    opacity: 0;
+    animation: zoomIn 0.4s ease forwards;
+}
+
+#caption {
+    text-align: center;
+    color: var(--texto);
+    padding: 0.5rem;
+    font-size: 1rem;
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: var(--texto);
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.close:hover {
+    color: #ff8a00;
+}
+
+/* Animações das imagens */
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
