@@ -320,6 +320,35 @@ figure:hover .galeria-thumb {
     box-shadow: 0 0 25px rgba(0, 123, 255, 0.25);
     transform: translateY(-6px);
 }
+
+.premiacao {
+    text-align: center;
+    padding: 5rem 2rem;
+    background: radial-gradient(circle at center, rgba(0, 123, 255, 0.08), rgba(0, 0, 0, 0.4));
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.premio {
+    font-size: 1.3rem;
+    color: var(--azulCL);
+    font-style: italic;
+    background: rgba(255, 255, 255, 0.05);
+    border-left: 4px solid var(--azulPR);
+    padding: 1.5rem;
+    border-radius: 10px;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.premio-texto {
+    max-width: 700px;
+    margin: 0 auto;
+    color: var(--texto);
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
 /* Animações das imagens */
 @keyframes zoomIn {
     from {
