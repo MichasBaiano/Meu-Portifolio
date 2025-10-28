@@ -349,6 +349,31 @@ figure:hover .galeria-thumb {
     line-height: 1.6;
 }
 
+.aprendizados {
+    padding: 5rem 2rem;
+}
+
+.lista-aprendizados {
+    list-style: none;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.lista-aprendizados li {
+    margin-bottom: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    border-left: 3px solid var(--azulPR);
+    transition: all 0.3s ease;
+}
+
+.lista-aprendizados li:hover {
+    transform: translateX(5px);
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.2);
+}
+
 /* Animações das imagens */
 @keyframes zoomIn {
     from {
