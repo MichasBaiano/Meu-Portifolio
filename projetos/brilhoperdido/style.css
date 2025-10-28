@@ -374,6 +374,16 @@ figure:hover .galeria-thumb {
     box-shadow: 0 0 15px rgba(0, 123, 255, 0.2);
 }
 
+.footer {
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.03);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+
 /* Animações das imagens */
 @keyframes zoomIn {
     from {
@@ -394,5 +404,15 @@ figure:hover .galeria-thumb {
 
     to {
         opacity: 1;
+    }
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
     }
 }
