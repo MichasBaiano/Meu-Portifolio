@@ -86,9 +86,9 @@ body {
 
 h1 {
     font-size: 3.5rem;
-    color: var(--azulSEC);
-    font-weight: bold;
-    margin: 20px;
+    color: var(--azulCL);
+    text-shadow: 0 0 25px rgba(102, 204, 255, 0.3);
+    margin-top: 1rem;
 }
 
 .cabecalho-subtitulo {
@@ -102,10 +102,11 @@ h1 {
 }
 
 .sobre-titulo {
-    font-size: 3rem;
     text-align: center;
-    margin-bottom: 20px;
-    color: var(--azulSEC);
+    font-size: 3rem;
+    color: var(--azulCL);
+    margin-bottom: 2.5rem;
+    text-shadow: 0 0 15px rgba(102, 204, 255, 0.3);
 }
 
 .sobre-div {
@@ -130,9 +131,10 @@ h1 {
 
 .projeto-titulo {
     text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 50px;
-    color: var(--azulSEC);
+    font-size: 3rem;
+    color: var(--azulCL);
+    margin-bottom: 2.5rem;
+    text-shadow: 0 0 15px rgba(102, 204, 255, 0.3);
 }
 
 .projeto-div {
@@ -184,9 +186,10 @@ h1 {
 
 .contato-titulo {
     text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 50px;
-    color: var(--azulSEC);
+    font-size: 3rem;
+    color: var(--azulCL);
+    margin-bottom: 2.5rem;
+    text-shadow: 0 0 15px rgba(102, 204, 255, 0.3);
 }
 
 .formulario-contato {
@@ -260,6 +263,15 @@ h1 {
     background-size: 200% 200%;
     animation: particulasAnim 10s ease-in-out infinite alternate;
     opacity: 0.4;
+}
+
+.footer {
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.03);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 @keyframes particulasAnim {
