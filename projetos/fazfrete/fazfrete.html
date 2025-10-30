@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>FazFrete — Projetos</title>
+    <link rel="icon" type="image/png" href="../../assets/img/Favicon/Favicon.png">
+
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="../../style.css">
+
+    <!-- CSS específico deste projeto -->
+    <link rel="stylesheet" href="./fazfrete.css">
+
+    <!-- Utilizando icons do Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS do Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- JS do Owl Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#gallery-carousel").owlCarousel({
+                items: 1,
+                loop: true,
+                margin: 10,
+                nav: true,
+                dots: true
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <div class="particulas"></div>
+
+    <nav class="navegacao">
+
+        <ul class="menu">
+            <li>
+                <a href="../../index.html" class="menu-link">Inicio</a>
+            </li>
+
+            <li>
+                <a href="../../index.html#projetos" class="menu-link">Projetos</a>
+            </li>
+
+    </nav>
+
+    <main>
+
+        <div class="projeto-header">
+            <div class="header-bg"></div>
+            <img class="projeto-thumb" src="../../assets/img/Foto-Projetos/fazfrete.png" alt="Urna Eleitoral">
+
+            <div class="meta">
+                <h1 class="projeto-titulo">FazFrete</h1>
+                <p class="projeto-sobre">O <strong>FazFrete</strong> é um projeto para um aplicativo móvel
+                    (cross-platform) no qual será desenvolvido com <strong>React Native</strong> para solucionar
+                    dificuldade de organização de transporte e fretamento em Pedro II.
+                </p>
+
+                <p class="projeto-sobre">O projeto utilizará um backend em <strong>Node.js (Express)</strong>, com
+                    autenticação via <strong>Firebase</strong> e banco de dados <strong>PostgreSQL</strong>. A aplicação
+                    integrará a <strong>API do Google Maps</strong> para rastreio em tempo real
+                    <strong>Socket.io</strong> para o chat.
+                </p>
+
+                <p class="projeto-sobre">O resultado será uma solução robusta e escalável, que conecta clientes e
+                    motoristas, demonstrando domínio prático de <i>desenvolvimento mobile</i> e <i>arquitetura de
+                        microsserviços.</i></p>
+
+                <div class="btn-row">
+                    <a class="btn figma"
+                        href="https://www.figma.com/design/mQmTYBik0wRikSh3n9FpvB/fretesP2?node-id=0-1&t=G4DmDjF3KcYyHNBB-1"
+                        target="_blank" rel="noopener">
+                        <i class="fa-brands fa-figma"></i><span>Ver no Figma</span>
+                    </a>
+                    <a class="btn linkedin"
+                        href="https://www.linkedin.com/posts/devmichelferreira_documenta%C3%A7%C3%A3o-do-sistema-activity-7386045888298639360-075m?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFTuLuUBBLovr77J_BpDqwxXk8ww0gKe5-s"
+                        target="_blank" rel="noopener">
+                        <i class="fa-brands fa-linkedin"></i><span>Ver no LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <section class="funcionalidades">
+            <h2 class="secao-titulo">Funcionalidades Desejadas do Projeto</h2>
+            <div class="funcionalidades-grid">
+
+                <div class="funcionalidades-card">
+                    <i class="fa-solid fa-mobile-screen"></i>
+                    <h3>App de Fretagem</h3>
+                    <p>Plataforma para organizar o transporte coletivo e a fretagem de carros e mercadorias em Pedro II.
+                    </p>
+                </div>
+
+                <div class="funcionalidades-card">
+                    <i class="fa-solid fa-address-book"></i>
+                    <h3>Gestão de Perfis</h3>
+                    <p>Sistema de cadastro e login para Clientes, Motoristas e Administradores, com perfis detalhados e
+                        autenticação via Google/Facebook.</p>
+                </div>
+
+                <div class="funcionalidades-card">
+                    <i class="fa-solid fa-route"></i>
+                    <h3>Solicitação e Rastreio</h3>
+                    <p>Permite ao cliente solicitar fretes informando origem/destino e acompanhar a viagem em tempo real
+                        no mapa.</p>
+                </div>
+
+                <div class="funcionalidades-card">
+                    <i class="fa-solid fa-comments-dollar"></i>
+                    <h3>Chat e Pagamentos</h3>
+                    <p>Chat em tempo real entre cliente e motorista e um sistema integrado para gerenciamento de
+                        pagamentos, incluindo Pix.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="tecnologias">
+            <h2 class="secao-titulo">Tecnologias A Ser Aplicadas</h2>
+
+            <div class="owl-carousel owl-theme" id="skills-carousel">
+
+                <div class="item tech-item">
+                    <i class="fa-brands fa-react"></i>
+                    <strong>React Native</strong>
+                </div>
+
+                <div class="item tech-item">
+                    <i class="fa-brands fa-node-js"></i>
+                    <strong>Node.js (Express)</strong>
+                </div>
+
+                <div class="item tech-item">
+                    <i class="fa-solid fa-database"></i>
+                    <strong>PostgreSQL</strong>
+                </div>
+
+                <div class="item tech-item">
+                    <i class="fa-solid fa-fire"></i>
+                    <strong>Firebase (Auth/DB)</strong>
+                </div>
+
+                <div class="item tech-item">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    <strong>Google Maps API</strong>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="documentos">
+            <h2 class="secao-titulo">Documentos do projeto</h2>
+
+            <div class="funcionalidades-grid">
+                <div class="funcionalidades-card">
+                    <a href="https://drive.google.com/drive/folders/1Y_bsH0_f1OuC0P75yLwd1sPhShNcKg0h?usp=sharing"
+                        target="_blank" class="btn">Ver Documentação</a></i>
+                </div>
+            </div>
+        </section>
+
+        <section class="aprendizados">
+            <h2 class="secao-titulo">O que Aprendi</h2>
+            <ul class="lista-aprendizados">
+                <li>
+                    Analisar um problema de logística local (a dificuldade de fretagem em Pedro II) e definir escopo, justificativa e público-alvo de uma solução de software.
+                </li>
+                <li>
+                    Identificar os Atores do sistema (Cliente, Motorista, Admin) e especificarrequisitos funcionais detalhados através de Casos de Uso.
+                </li>
+                <li>
+                    Documentar os fluxos de eventos de cada funcionalidade, especificando o Fluxo Básico, Fluxos Alternativos e Fluxos de Exceção.
+                </li>
+                <li>
+                    Modelar a arquitetura e os processos do sistema utilizando Diagramas de Caso de Uso, Diagramas de Classe e Diagramas de Atividade/Sequência.
+                </li>
+                <li>
+                    Pesquisar, comparar e selecionar a arquitetura de tecnologias (stack) mais adequada para os requisitos do projeto, incluindo React Native, Node.js e Firebase.
+                </li>
+                <li>
+                    Projetar e criar protótipos de alta fidelidade (mockups) para a interface do usuário (UI),definindo a experiência de navegação do aplicativo.
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 Michel Júnior — Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#skills-carousel').owlCarousel({
+                loop: true,
+                margin: 16,
+                nav: true,
+                dots: false,
+                responsive: {
+                    0: { items: 1 },
+                    600: { items: 2 },
+                    1000: { items: 3 }
+                }
+            });
+
+            const input = document.getElementById('fileInput');
+            const previews = document.getElementById('previews');
+
+            input.addEventListener('change', (ev) => {
+                previews.innerHTML = '';
+                Array.from(ev.target.files).forEach(file => {
+                    if (file.type.startsWith('image/')) {
+                        const fr = new FileReader();
+                        fr.onload = () => {
+                            const img = document.createElement('img');
+                            img.src = fr.result;
+                            img.className = 'thumb-preview';
+                            previews.appendChild(img);
+                        };
+                        fr.readAsDataURL(file);
+                    } else {
+                        const div = document.createElement('div');
+                        div.textContent = file.name;
+                        div.style.padding = '.5rem';
+                        div.style.border = '1px solid rgba(255,255,255,0.06)';
+                        div.style.borderRadius = '6px';
+                        previews.appendChild(div);
+                    }
+                });
+            });
+        });
+    </script>
+
+    <!-- Script para abrir as imagens maior -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const modal = document.getElementById("imageModal");
+            const modalImg = document.getElementById("modalImg");
+            const captionText = document.getElementById("caption");
+            const closeBtn = document.querySelector(".close");
+
+            document.querySelectorAll(".galeria-thumb").forEach(img => {
+                let mouseDownX = 0;
+                let mouseDownY = 0;
+                let dragged = false;
+
+                img.addEventListener("mousedown", e => {
+                    mouseDownX = e.clientX;
+                    mouseDownY = e.clientY;
+                    dragged = false;
+                });
+
+                img.addEventListener("mousemove", e => {
+                    if (Math.abs(e.clientX - mouseDownX) > 5 || Math.abs(e.clientY - mouseDownY) > 5) {
+                        dragged = true;
+                    }
+                });
+
+                img.addEventListener("mouseup", () => {
+                    if (!dragged) {
+                        modal.style.display = "block";
+                        modalImg.src = img.dataset.full;
+                        captionText.innerText = img.nextElementSibling?.innerText || img.alt;
+
+                        modalImg.style.animation = "none";
+                        void modalImg.offsetWidth;
+                        modalImg.style.animation = "zoomIn 0.4s ease forwards";
+                    }
+                });
+            });
+
+            closeBtn.addEventListener("click", () => {
+                modal.style.display = "none";
+            });
+
+            modal.addEventListener("click", (e) => {
+                if (e.target === modal) modal.style.display = "none";
+            });
+        });
+    </script>
+
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div id="caption"></div>
+    </div>
+</body>
+
+</html>
