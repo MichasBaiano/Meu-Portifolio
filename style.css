@@ -288,3 +288,123 @@ h1 {
         transform: translateY(-20px);
     }
 }
+
+
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 3.2rem;
+    }
+
+    .sobre-titulo,
+    .projeto-titulo,
+    .contato-titulo {
+        font-size: 2.8rem;
+    }
+
+    .menu {
+        gap: 2rem; 
+    }
+
+    .contato {
+        padding: 5rem 2rem;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .navegacao {
+        padding: 1rem;
+    }
+
+    .menu {
+        gap: 1.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .foto-perfil {
+        width: 260px;
+        height: 313px;
+    }
+
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    .cabecalho-subtitulo {
+        font-size: 1.3rem;
+    }
+
+    .sobre-titulo,
+    .projeto-titulo,
+    .contato-titulo {
+        font-size: 2.5rem;
+    }
+
+    .sobre,
+    .projeto,
+    .contato {
+        padding: 5rem 1.5rem;
+    }
+
+    .sobre-div {
+        padding: 1.5rem;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    .navegacao {
+        position: static; 
+        background-color: var(--fundo);
+        padding: 1.5rem 1rem;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        flex-wrap: nowrap;
+    }
+
+    .cabecalho {
+        min-height: auto; 
+        padding: 4rem 1rem; 
+    }
+
+    .foto-perfil {
+        width: 200px;
+        height: 240px;
+        border-width: 3px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+        margin-top: 1.5rem;
+    }
+
+    .cabecalho-subtitulo {
+        font-size: 1.1rem;
+    }
+
+
+    .contato {
+        padding: 4rem 1rem;
+    }
+
+
+    .contato-titulo {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .sobre-texto {
+        font-size: 1rem;
+    }
+
+    .formulario-contato {
+        padding: 1.5rem;
+    }
+}
