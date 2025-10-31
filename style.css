@@ -209,6 +209,61 @@ h1 {
     box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
 }
 
+/* Seção Habilidades */
+.habilidades {
+    padding: 6rem 2rem;
+    background-color: rgba(10, 12, 16, 0.8);
+}
+
+.habilidades-titulo {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--azulCL);
+    margin-bottom: 2.5rem;
+    text-shadow: 0 0 15px rgba(102, 204, 255, 0.3);
+}
+
+.habilidades-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.habilidade-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 14px;
+    border: 1px solid rgba(102, 204, 255, 0.1);
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.4s ease;
+    backdrop-filter: blur(5px);
+}
+
+.habilidade-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0, 123, 255, 0.25);
+}
+
+.habilidade-card i {
+    font-size: 3rem;
+    color: var(--azulCL);
+    margin-bottom: 1rem;
+}
+
+.habilidade-card h3 {
+    font-size: 1.3rem;
+    color: var(--texto);
+    margin-bottom: 0.25rem;
+}
+
+.habilidade-card p {
+    font-size: 0.9rem;
+    color: var(--azulSEC);
+}
+
+
 /* Seção Projetos */
 .projeto {
     padding: 6rem 2rem;
@@ -395,6 +450,7 @@ h1 {
 
     .sobre-titulo,
     .projeto-titulo,
+    .habilidades-titulo,
     .contato-titulo {
         font-size: 2.8rem;
     }
@@ -434,7 +490,17 @@ h1 {
         font-size: 1.3rem;
     }
 
+    .habilidades {
+        padding: 5rem 1.5rem;
+    }
+
+    .header-cta-row {
+        flex-direction: column;
+        width: 80%;
+    }
+
     .sobre-titulo,
+    .habilidades-titulo,
     .projeto-titulo,
     .contato-titulo {
         font-size: 2.5rem;
@@ -487,11 +553,12 @@ h1 {
         font-size: 1.1rem;
     }
 
+    .habilidades,
     .contato {
         padding: 4rem 1rem;
     }
 
-
+    .habilidades-titulo,
     .contato-titulo {
         font-size: 2rem;
         margin-bottom: 2rem;
