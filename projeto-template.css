@@ -1,4 +1,14 @@
+/* Navegação */
+.navegacao .menu-link[href*="#projetos"] {
+    color: var(--texto); 
+    font-weight: 700;
+}
 
+.navegacao .menu-link[href*="#projetos"]::after {
+    width: 100%;
+}
+
+/* Seção Sobre */
 main {
     max-width: 1200px;
     margin: 6rem auto;
@@ -111,20 +121,25 @@ main {
 .btn.github {
     background-color: #24292e;
 }
+
 .btn.github:hover {
     background-color: #000000;
     transform: translateY(-2px);
 }
+
 .btn.linkedin {
     background-color: #0077b5;
 }
+
 .btn.linkedin:hover {
     background-color: #005f8d;
     transform: translateY(-2px);
 }
+
 .btn.figma {
     background-color: #1E90FF; 
 }
+
 .btn.figma:hover {
     background-color: #007BE5; 
     transform: translateY(-2px);
@@ -265,6 +280,7 @@ figure:hover figcaption {
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
+
 .premio {
     font-size: 1.3rem;
     color: var(--azulCL);
@@ -276,6 +292,7 @@ figure:hover figcaption {
     display: inline-block;
     margin-bottom: 1rem;
 }
+
 .premio-texto {
     max-width: 700px;
     margin: 0 auto;
