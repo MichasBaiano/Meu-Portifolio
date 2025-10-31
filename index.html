@@ -203,6 +203,24 @@
         </div>
     </section>
 
+    <section class="contato" id="contato">
+
+        <h2 class="contato-titulo">Entre em Contato</h2>
+        <form action="" id="formulario" class="formulario-contato" onsubmit="enviarWhatsapp(event)">
+            <div class="grupo-form">
+                <label for="nome" class="sr-only">Nome</label>
+                <input placeholder="Nome" class="campo-form" id="nome" required>
+            </div>
+            <div class="grupo-form">
+                <label for="mensagem" class="sr-only">Digite sua Mensagem</label>
+                <textarea class="campo-form textarea" placeholder="Digite sua Mensagem" rows="6" id="mensagem"
+                    required></textarea>
+            </div>
+
+            <button type="submit" class="botao-form">Enviar via Whatsapp</button>
+        </form>
+
+    </section>
 
     <footer class="footer">
         <p>© 2025 Michel Júnior — Todos os direitos reservados.</p>
