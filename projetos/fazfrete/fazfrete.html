@@ -14,25 +14,11 @@
     <!-- Utilizando icons do Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-    <!-- CSS do Owl Carousel -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-
-    <!-- JS do Owl Carousel -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $("#gallery-carousel").owlCarousel({
-                items: 1,
-                loop: true,
-                margin: 10,
-                nav: true,
-                dots: true
-            });
-        });
-    </script>
+    <style>
+        .header-bg {
+            background: url("../../assets/img/Foto-Projetos/fazfrete.png") center/cover no-repeat;
+        }
+    </style>
 
 </head>
 
@@ -173,22 +159,28 @@
             <h2 class="secao-titulo">O que Aprendi</h2>
             <ul class="lista-aprendizados">
                 <li>
-                    Analisar um problema de logística local (a dificuldade de fretagem em Pedro II) e definir escopo, justificativa e público-alvo de uma solução de software.
+                    Analisar um problema de logística local (a dificuldade de fretagem em Pedro II) e definir escopo,
+                    justificativa e público-alvo de uma solução de software.
                 </li>
                 <li>
-                    Identificar os Atores do sistema (Cliente, Motorista, Admin) e especificarrequisitos funcionais detalhados através de Casos de Uso.
+                    Identificar os Atores do sistema (Cliente, Motorista, Admin) e especificarrequisitos funcionais
+                    detalhados através de Casos de Uso.
                 </li>
                 <li>
-                    Documentar os fluxos de eventos de cada funcionalidade, especificando o Fluxo Básico, Fluxos Alternativos e Fluxos de Exceção.
+                    Documentar os fluxos de eventos de cada funcionalidade, especificando o Fluxo Básico, Fluxos
+                    Alternativos e Fluxos de Exceção.
                 </li>
                 <li>
-                    Modelar a arquitetura e os processos do sistema utilizando Diagramas de Caso de Uso, Diagramas de Classe e Diagramas de Atividade/Sequência.
+                    Modelar a arquitetura e os processos do sistema utilizando Diagramas de Caso de Uso, Diagramas de
+                    Classe e Diagramas de Atividade/Sequência.
                 </li>
                 <li>
-                    Pesquisar, comparar e selecionar a arquitetura de tecnologias (stack) mais adequada para os requisitos do projeto, incluindo React Native, Node.js e Firebase.
+                    Pesquisar, comparar e selecionar a arquitetura de tecnologias (stack) mais adequada para os
+                    requisitos do projeto, incluindo React Native, Node.js e Firebase.
                 </li>
                 <li>
-                    Projetar e criar protótipos de alta fidelidade (mockups) para a interface do usuário (UI),definindo a experiência de navegação do aplicativo.
+                    Projetar e criar protótipos de alta fidelidade (mockups) para a interface do usuário (UI),definindo
+                    a experiência de navegação do aplicativo.
                 </li>
             </ul>
         </section>
@@ -199,105 +191,20 @@
         <p>© 2025 Michel Júnior — Todos os direitos reservados.</p>
     </footer>
 
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
-    <script>
-        $(document).ready(function () {
-            $('#skills-carousel').owlCarousel({
-                loop: true,
-                margin: 16,
-                nav: true,
-                dots: false,
-                responsive: {
-                    0: { items: 1 },
-                    600: { items: 2 },
-                    1000: { items: 3 }
-                }
-            });
-
-            const input = document.getElementById('fileInput');
-            const previews = document.getElementById('previews');
-
-            input.addEventListener('change', (ev) => {
-                previews.innerHTML = '';
-                Array.from(ev.target.files).forEach(file => {
-                    if (file.type.startsWith('image/')) {
-                        const fr = new FileReader();
-                        fr.onload = () => {
-                            const img = document.createElement('img');
-                            img.src = fr.result;
-                            img.className = 'thumb-preview';
-                            previews.appendChild(img);
-                        };
-                        fr.readAsDataURL(file);
-                    } else {
-                        const div = document.createElement('div');
-                        div.textContent = file.name;
-                        div.style.padding = '.5rem';
-                        div.style.border = '1px solid rgba(255,255,255,0.06)';
-                        div.style.borderRadius = '6px';
-                        previews.appendChild(div);
-                    }
-                });
-            });
-        });
-    </script>
-
-    <!-- Script para abrir as imagens maior -->
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const modal = document.getElementById("imageModal");
-            const modalImg = document.getElementById("modalImg");
-            const captionText = document.getElementById("caption");
-            const closeBtn = document.querySelector(".close");
-
-            document.querySelectorAll(".galeria-thumb").forEach(img => {
-                let mouseDownX = 0;
-                let mouseDownY = 0;
-                let dragged = false;
-
-                img.addEventListener("mousedown", e => {
-                    mouseDownX = e.clientX;
-                    mouseDownY = e.clientY;
-                    dragged = false;
-                });
-
-                img.addEventListener("mousemove", e => {
-                    if (Math.abs(e.clientX - mouseDownX) > 5 || Math.abs(e.clientY - mouseDownY) > 5) {
-                        dragged = true;
-                    }
-                });
-
-                img.addEventListener("mouseup", () => {
-                    if (!dragged) {
-                        modal.style.display = "block";
-                        modalImg.src = img.dataset.full;
-                        captionText.innerText = img.nextElementSibling?.innerText || img.alt;
-
-                        modalImg.style.animation = "none";
-                        void modalImg.offsetWidth;
-                        modalImg.style.animation = "zoomIn 0.4s ease forwards";
-                    }
-                });
-            });
-
-            closeBtn.addEventListener("click", () => {
-                modal.style.display = "none";
-            });
-
-            modal.addEventListener("click", (e) => {
-                if (e.target === modal) modal.style.display = "none";
-            });
-        });
-    </script>
-
     <div id="imageModal" class="modal">
         <span class="close">&times;</span>
         <img class="modal-content" id="modalImg">
         <div id="caption"></div>
     </div>
-</body>
 
+    <!-- CSS do Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- JS do Owl Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script src="../../scripts/main.js"></script>
+</body>
 </html>

@@ -14,26 +14,11 @@
     <!-- Utilizando icons do Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-    <!-- CSS do Owl Carousel -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-
-    <!-- JS do Owl Carousel -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $("#gallery-carousel").owlCarousel({
-                items: 1,
-                loop: true,
-                margin: 10,
-                nav: true,
-                dots: true
-            });
-        });
-    </script>
-
+    <style>
+        .header-bg {
+            background: url("../../assets/img/Foto-Projetos/urna.jpeg") center/cover no-repeat;
+        }
+    </style>
 </head>
 
 <body>
@@ -60,11 +45,17 @@
 
             <div class="meta">
                 <h1 class="projeto-titulo">Urna Eletrônica em Java</h1>
-                <p class="projeto-sobre">A <strong>Urna Eletrônica em Java</strong> é um projeto focado em simular de forma fiel o funcionamento da urna eleitoral brasileira, tanto no aspecto visual quanto funcional.</p>
+                <p class="projeto-sobre">A <strong>Urna Eletrônica em Java</strong> é um projeto focado em simular de
+                    forma fiel o funcionamento da urna eleitoral brasileira, tanto no aspecto visual quanto funcional.
+                </p>
 
-                <p class="projeto-sobre">O sistema aplica princípios de <strong>Orientação a Objetos</strong>, com gerenciamento de eleitores e candidatos, e utiliza <strong>Java Swing</strong> para a interface gráfica e <strong>Java Sound API</strong> para os áudios característicos.</p>
+                <p class="projeto-sobre">O sistema aplica princípios de <strong>Orientação a Objetos</strong>, com
+                    gerenciamento de eleitores e candidatos, e utiliza <strong>Java Swing</strong> para a interface
+                    gráfica e <strong>Java Sound API</strong> para os áudios característicos.</p>
 
-                <p class="projeto-sobre">Organizado em camadas (Pessoas, Eleicao, View), o resultado é um recurso didático que demonstra domínio prático de <i>desenvolvimento de interfaces</i> e <i>programação Java.</i></p>
+                <p class="projeto-sobre">Organizado em camadas (Pessoas, Eleicao, View), o resultado é um recurso
+                    didático que demonstra domínio prático de <i>desenvolvimento de interfaces</i> e <i>programação
+                        Java.</i></p>
 
                 <div class="btn-row">
                     <a class="btn github" href="https://github.com/RecantoDoJohn/ProjetoUrnaEletronica" target="_blank"
@@ -181,7 +172,7 @@
             <div class="funcionalidades-grid">
                 <div class="funcionalidades-card">
                     <a href="https://drive.google.com/file/d/1b3D-NYYPfxvNgNH4cvKegfAgRESgAOqY/view?usp=sharing"
-                        target="_blank" class="btn">Ver Projeto Inicial</a></i>
+                        target="_blank" class="btn">Ver Projeto Inicial</a>
                 </div>
             </div>
         </section>
@@ -207,105 +198,22 @@
         <p>© 2025 Michel Júnior — Todos os direitos reservados.</p>
     </footer>
 
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
-    <script>
-        $(document).ready(function () {
-            $('#skills-carousel').owlCarousel({
-                loop: true,
-                margin: 16,
-                nav: true,
-                dots: false,
-                responsive: {
-                    0: { items: 1 },
-                    600: { items: 2 },
-                    1000: { items: 3 }
-                }
-            });
-
-            const input = document.getElementById('fileInput');
-            const previews = document.getElementById('previews');
-
-            input.addEventListener('change', (ev) => {
-                previews.innerHTML = '';
-                Array.from(ev.target.files).forEach(file => {
-                    if (file.type.startsWith('image/')) {
-                        const fr = new FileReader();
-                        fr.onload = () => {
-                            const img = document.createElement('img');
-                            img.src = fr.result;
-                            img.className = 'thumb-preview';
-                            previews.appendChild(img);
-                        };
-                        fr.readAsDataURL(file);
-                    } else {
-                        const div = document.createElement('div');
-                        div.textContent = file.name;
-                        div.style.padding = '.5rem';
-                        div.style.border = '1px solid rgba(255,255,255,0.06)';
-                        div.style.borderRadius = '6px';
-                        previews.appendChild(div);
-                    }
-                });
-            });
-        });
-    </script>
-
-    <!-- Script para abrir as imagens maior -->
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const modal = document.getElementById("imageModal");
-            const modalImg = document.getElementById("modalImg");
-            const captionText = document.getElementById("caption");
-            const closeBtn = document.querySelector(".close");
-
-            document.querySelectorAll(".galeria-thumb").forEach(img => {
-                let mouseDownX = 0;
-                let mouseDownY = 0;
-                let dragged = false;
-
-                img.addEventListener("mousedown", e => {
-                    mouseDownX = e.clientX;
-                    mouseDownY = e.clientY;
-                    dragged = false;
-                });
-
-                img.addEventListener("mousemove", e => {
-                    if (Math.abs(e.clientX - mouseDownX) > 5 || Math.abs(e.clientY - mouseDownY) > 5) {
-                        dragged = true;
-                    }
-                });
-
-                img.addEventListener("mouseup", () => {
-                    if (!dragged) {
-                        modal.style.display = "block";
-                        modalImg.src = img.dataset.full;
-                        captionText.innerText = img.nextElementSibling?.innerText || img.alt;
-
-                        modalImg.style.animation = "none";
-                        void modalImg.offsetWidth;
-                        modalImg.style.animation = "zoomIn 0.4s ease forwards";
-                    }
-                });
-            });
-
-            closeBtn.addEventListener("click", () => {
-                modal.style.display = "none";
-            });
-
-            modal.addEventListener("click", (e) => {
-                if (e.target === modal) modal.style.display = "none";
-            });
-        });
-    </script>
-
     <div id="imageModal" class="modal">
         <span class="close">&times;</span>
         <img class="modal-content" id="modalImg">
         <div id="caption"></div>
     </div>
+
+    
+    <!-- CSS do Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- JS do Owl Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script src="../../scripts/main.js"></script>
 </body>
 
 </html>
