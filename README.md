@@ -1,7 +1,5 @@
 # Portfólio de Desenvolvedor — Michel Júnior
 
-[![Imagem de pré-visualização do portfólio](https://michasbaiano.github.io/Meu-Portifolio/assets/img/Foto-Pessoal/fotoMichel.jpeg)](https://michasbaiano.github.io/Meu-Portifolio/)
-
 Este repositório contém o código-fonte do meu portfólio de desenvolvedor pessoal, construído do zero com foco em design, performance e código limpo.
 
 ## 🚀 Site no Ar
