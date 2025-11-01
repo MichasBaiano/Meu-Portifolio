@@ -5,7 +5,7 @@ Este repositório contém o código-fonte do meu portfólio de desenvolvedor pes
 ## 🚀 Site no Ar
 
 **Acesse a versão publicada em:**
-**[https://michasbaiano.github.io/Meu-Portifolio/](https://michasbaiano.github.io/Meu-Portifolio/)**
+**[https://michasbaiano.github.io/Meu-Portfolio/](https://michasbaiano.github.io/Meu-Portfolio/)**
 
 ---
 
@@ -55,7 +55,7 @@ Não é necessário nenhum build. O projeto é composto de arquivos estáticos.
 
 1.  Clone o repositório (usando o nome correto `Meu-Portifolio`):
     ```bash
-    git clone [https://github.com/MichasBaiano/Meu-Portifolio.git](https://github.com/MichasBaiano/Meu-Portifolio.git)
+    git clone [https://github.com/MichasBaiano/Meu-Portfolio.git](https://github.com/MichasBaiano/Meu-Portifolio.git)
     ```
 2.  Navegue até a pasta do projeto:
     ```bash
